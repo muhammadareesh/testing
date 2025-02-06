@@ -1,0 +1,110 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+header {
+  width: min(100%, 1240px);
+  border: 1px solid red;
+  margin: 0 auto;
+
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+
+    & ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+
+      & li {
+        padding-right: 28px;
+        border-right: 1px solid rgb(121, 121, 121);
+      }
+
+      & li:last-child {
+        border-right: none;
+
+        & a {
+          color: rgb(121, 121, 121);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  overflow: hidden;
+  /* background-color: green; */
+}
+
+.container h1 {
+  font-size: 17rem;
+  line-height: 250px;
+}
+.container .images {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+  padding-left: 55px;
+  gap: 4rem;
+  margin-top: 10px;
+}
+.container .images img {
+  align-items: center;
+  border: 10px solid rgb(14, 14, 14);
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0% 27%;
+}
+.container .cards {
+  color: rgb(121, 121, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* border: 2px solid green; */
+  padding-top: 10px;
+  width: 100%;
+}
+
+.container .cards .card-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+  height: 150px;
+  width: 30%;
+  /* padding: 18px; */
+  /* border: 2px solid red; */
+  border-radius: 23px;
+  background-color: rgb(14, 14, 14);
+}
+
+/* .container .cards:last-child{
+    color: white;
+} */
+
+.container .cards .card-3 {
+  color: white;
+}
